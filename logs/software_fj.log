@@ -1,0 +1,35 @@
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | === Inicialización del Sistema Integral Software FJ (Modo en Memoria) ===
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Cliente registrado correctamente -> Cliente[CLI-01] David Esteban Bravo Martin (Doc: 1032356002 | Email: david.bravo@softwarefj.co)
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total clientes activos en memoria: 1
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Cliente registrado correctamente -> Cliente[CLI-02] Laura Camila Torres (Doc: 1023456789 | Email: laura.torres@empresa.co)
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total clientes activos en memoria: 2
+2026-11-23 02:28:12 | ERROR    | SoftwareFJ | Error al registrar cliente 'CLI-03': [ERR-DATOS] El correo electrónico 'correo_invalido_sin_arroba' no tiene un formato válido.
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total clientes activos en memoria: 2
+2026-11-23 02:28:12 | ERROR    | SoftwareFJ | Error al registrar cliente 'CLI-04': [ERR-OPERACION] Ya existe un cliente registrado con ID 'CLI-04' o documento '1032356002'.
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total clientes activos en memoria: 2
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Servicio registrado correctamente -> ReservaSala[SRV-01] Sala Ejecutiva Bogotá (Capacidad máx: 12 personas) | Tarifa: $120,000/h | Estado: Disponible
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total servicios en catálogo: 1
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Servicio registrado correctamente -> AlquilerEquipo[SRV-02] Portátil Workstation i7 (Stock: 5 uds) | Tarifa: $45,000/h | Estado: Disponible
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total servicios en catálogo: 2
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Servicio registrado correctamente -> AsesoriaEspecializada[SRV-03] Consultoría Arquitectura Python (Área: Backend POO) | Tarifa: $180,000/h | Estado: Disponible
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total servicios en catálogo: 3
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Servicio registrado correctamente -> ReservaSala[SRV-04] Auditorio Principal (Mantenimiento) (Capacidad máx: 50 personas) | Tarifa: $300,000/h | Estado: No disponible
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total servicios en catálogo: 4
+2026-11-23 02:28:12 | ERROR    | SoftwareFJ | Simulación 5 - Creación inválida de servicio interceptada: [ERR-DATOS] La tarifa base por hora debe ser un número positivo mayor a cero.
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Reserva CONFIRMADA -> Reserva[RES-01] | Cliente: David Esteban Bravo Martin | Servicio: Sala Ejecutiva Bogotá | Duración: 4.0h | Estado: CONFIRMADA | Total: $642,600.00 (Costo: $642,600.00)
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total reservas registradas: 1
+2026-11-23 02:28:12 | ERROR    | SoftwareFJ | Fallo en reserva 'RES-02': [ERR-RESERVA] Fallo al confirmar la reserva RES-02 para el servicio SRV-01. | Causa raíz: [ERR-DATOS] El número de asistentes (25) excede la capacidad máxima de la sala (12).
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total reservas registradas: 1
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Reserva CONFIRMADA -> Reserva[RES-03] | Cliente: Laura Camila Torres | Servicio: Portátil Workstation i7 | Duración: 6.0h | Estado: CONFIRMADA | Total: $885,000.00 (Costo: $885,000.00)
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total reservas registradas: 2
+2026-11-23 02:28:12 | ERROR    | SoftwareFJ | Fallo en reserva 'RES-04': [ERR-RESERVA] Fallo al confirmar la reserva RES-04 para el servicio SRV-04. | Causa raíz: [ERR-DISP] El servicio 'Auditorio Principal (Mantenimiento)' (SRV-04) no está disponible.
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total reservas registradas: 2
+2026-11-23 02:28:12 | ERROR    | SoftwareFJ | Fallo en reserva 'RES-05': [ERR-RESERVA] Fallo al confirmar la reserva RES-05 para el servicio SRV-03. | Causa raíz: [ERR-CALCULO] El porcentaje de descuento (80.0%) debe estar entre 0% y 50%.
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total reservas registradas: 2
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Reserva CONFIRMADA -> Reserva[RES-06] | Cliente: David Esteban Bravo Martin | Servicio: Consultoría Arquitectura Python | Duración: 4.0h | Estado: CONFIRMADA | Total: $1,373,557.50 (Costo: $1,373,557.50)
+2026-11-23 02:28:12 | DEBUG    | SoftwareFJ | [FIN OPERACIÓN] Total reservas registradas: 3
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Reserva RES-06 procesada exitosamente. Total facturado: $1,373,557.50
+2026-11-23 02:28:12 | WARNING  | SoftwareFJ | No se pudo cancelar reserva: [ERR-OPERACION] No se permite cancelar la reserva RES-06 porque ya fue PROCESADA.
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | Reserva RES-03 cancelada. Motivo: Reprogramación de proyecto del cliente
+2026-11-23 02:28:12 | WARNING  | SoftwareFJ | No se pudo cancelar reserva: [ERR-OPERACION] La reserva RES-03 ya se encuentra CANCELADA.
+2026-11-23 02:28:12 | INFO     | SoftwareFJ | === Simulación finalizada SIN INTERRUPCIONES | Clientes: 2 | Servicios: 4 | Reservas válidas: 3 ===
